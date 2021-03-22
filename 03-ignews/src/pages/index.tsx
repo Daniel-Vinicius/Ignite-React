@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import { SubscribeButton } from "../components/SubscribeButton";
 import { stripe } from "../services/stripe";
@@ -38,10 +38,8 @@ export default function Home({ product }: HomeProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const price = await stripe.prices.retrieve("price_1IXu5kCdA3UbyWjkHBQ4wzEF", {
-    expand: ["product"],
-  });
+export const getStaticProps: GetStaticProps = async () => {
+  const price = await stripe.prices.retrieve("price_1IXu5kCdA3UbyWjkHBQ4wzEF");
 
   const product = {
     priceId: price.id,
@@ -55,5 +53,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
     props: {
       product,
     },
+    revalidate: 86400, // 24 hours
   };
 };
