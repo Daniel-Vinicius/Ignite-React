@@ -48,8 +48,6 @@ export default NextAuth({
       }
     },
     async signIn(user, account, profile) {
-      // user: id, name, email, image
-
       const { email } = user;
 
       try {
