@@ -4,13 +4,9 @@
 
 ## [Preview](https://dtmoney.vercel.app/)
 
----
-
 ## 💻 Projeto
 
 O dtmoney é uma aplicação de controle financeiro. Foi desenvolvido durante as aulas do Chapter II da trilha de ReactJS do Bootcamp Ignite da Rocketseat, e nele é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰
-
----
 
 ## 🚀 Tecnologias
 
