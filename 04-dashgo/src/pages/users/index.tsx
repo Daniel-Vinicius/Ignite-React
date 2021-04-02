@@ -63,7 +63,7 @@ export default function UserList() {
                   </Th>
                   <Th>Usuário</Th>
                   {isWideVersion && <Th>Data de cadastro</Th>}
-                  <Th w="8"></Th>
+                  {isWideVersion && <Th w="8"></Th>}
                 </Tr>
               </Thead>
               <Tbody>
@@ -80,8 +80,8 @@ export default function UserList() {
                     </Box>
                   </Td>
                   {isWideVersion && <Td>04 de Abril, 2021</Td>}
-                  <Td>
-                    {isWideVersion && (
+                  {isWideVersion && (
+                    <Td>
                       <Button
                         as="a"
                         size="sm"
@@ -91,8 +91,8 @@ export default function UserList() {
                       >
                         Editar
                       </Button>
-                    )}
-                  </Td>
+                    </Td>
+                  )}
                 </Tr>
                 <Tr>
                   <Td px={["4", "4", "6"]}>
@@ -107,8 +107,8 @@ export default function UserList() {
                     </Box>
                   </Td>
                   {isWideVersion && <Td>04 de Abril, 2021</Td>}
-                  <Td>
-                    {isWideVersion && (
+                  {isWideVersion && (
+                    <Td>
                       <Button
                         as="a"
                         size="sm"
@@ -118,8 +118,8 @@ export default function UserList() {
                       >
                         Editar
                       </Button>
-                    )}
-                  </Td>
+                    </Td>
+                  )}
                 </Tr>
                 <Tr>
                   <Td px={["4", "4", "6"]}>
@@ -134,8 +134,8 @@ export default function UserList() {
                     </Box>
                   </Td>
                   {isWideVersion && <Td>04 de Abril, 2021</Td>}
-                  <Td>
-                    {isWideVersion && (
+                  {isWideVersion && (
+                    <Td>
                       <Button
                         as="a"
                         size="sm"
@@ -145,8 +145,8 @@ export default function UserList() {
                       >
                         Editar
                       </Button>
-                    )}
-                  </Td>
+                    </Td>
+                  )}
                 </Tr>
               </Tbody>
             </Table>
