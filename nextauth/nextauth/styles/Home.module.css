@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid #e28e27;
+  outline: 0;
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+.container button {
+  width: 100%;
+  height: 60px;
+  margin: 10px;
+  max-width: 200px;
+  border-radius: 10px;
+  background-color: #e28e27;
+  border: 2px solid #fff;
+  outline: 0px;
+  color: #fff;
+}
