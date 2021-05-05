@@ -46,6 +46,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const isAuthenticated = !!user;
 
   useEffect(() => {
+    //  Não é possível desestruturar algo que tem o caractere . por isso colocamos entre aspas e atribuímos a uma variável.
     const { "nextauth.token": token } = parseCookies();
 
     if (token) {
