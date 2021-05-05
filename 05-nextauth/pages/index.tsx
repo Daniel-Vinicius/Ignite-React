@@ -1,5 +1,8 @@
 import { FormEvent, useState } from "react";
+import { GetServerSideProps } from "next";
+
 import { useAuth } from "../contexts/AuthContext";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -35,3 +38,11 @@ export default function Home() {
     </form>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  console.log(context.req.cookies);
+
+  return {
+    props: {},
+  };
+};
