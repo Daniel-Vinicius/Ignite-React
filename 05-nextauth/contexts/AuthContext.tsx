@@ -62,7 +62,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
         case "signIn":
           window.location.replace("http://localhost:3000/dashboard");
-          authChannel.close();
           break;
 
         default:
