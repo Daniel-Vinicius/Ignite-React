@@ -1,23 +1,18 @@
-import { useEffect } from "react";
-
 import { useAuth } from "../contexts/AuthContext";
 
 import { withSSRAuth } from "../utils/withSSRAuth";
 
 import { setupAPIClient } from "../services/api";
-import { api } from "../services/apiClient";
 import { Can } from "../components/Can";
 
 export default function Dashboard(): JSX.Element {
-  const { user } = useAuth();
-
-  useEffect(() => {
-    api.get("/me").then((response) => console.log(response));
-  }, []);
+  const { user, signOut } = useAuth();
 
   return (
     <div>
       <h1>Dashboard: {user?.email}</h1>
+
+      <button onClick={signOut}>Sign Out</button>
 
       <Can permissions={["metrics.list"]} roles={["administrator", "editor"]}>
         <h1>Métricas</h1>
