@@ -8,18 +8,15 @@ interface SearchResultsProps {
     price: number;
     title: string;
   }>;
+  onAddToWishList: (id: number) => void;
 }
 
-export function SearchResults({ results }: SearchResultsProps) {
+export function SearchResults({
+  results,
+  onAddToWishList,
+}: SearchResultsProps) {
   const totalPrice = useMemo(() => {
     return results.reduce((acc, product) => {
-      // const inverseSqrt5 = 0.44721359549995793928183473374626;
-      // const phi = 1.6180339887498948482045868343656;
-
-      // const calculopesado = Math.floor(
-      //   Math.pow(phi, product.price) * inverseSqrt5 + 0.5
-      // );
-
       return acc + product.price;
     }, 0);
   }, [results]);
@@ -28,7 +25,13 @@ export function SearchResults({ results }: SearchResultsProps) {
     <div>
       <h2>{totalPrice}</h2>
       {results.map((product) => {
-        return <ProductItem product={product} />;
+        return (
+          <ProductItem
+            key={product.id}
+            onAddToWishList={onAddToWishList}
+            product={product}
+          />
+        );
       })}
     </div>
   );
