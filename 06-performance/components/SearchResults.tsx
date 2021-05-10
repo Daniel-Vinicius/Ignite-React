@@ -1,3 +1,5 @@
+import { List, ListRowRenderer } from "react-virtualized";
+
 import { ProductItem } from "./ProductItem";
 
 interface SearchResultsProps {
@@ -16,18 +18,28 @@ export function SearchResults({
   totalPrice,
   onAddToWishList,
 }: SearchResultsProps) {
+  const rowRenderer: ListRowRenderer = ({ index, key, style }) => {
+    return (
+      <div key={key} style={style}>
+        <ProductItem
+          onAddToWishList={onAddToWishList}
+          product={results[index]}
+        />
+      </div>
+    );
+  };
+
   return (
     <div>
       <h2>{totalPrice}</h2>
-      {results.map((product) => {
-        return (
-          <ProductItem
-            key={product.id}
-            onAddToWishList={onAddToWishList}
-            product={product}
-          />
-        );
-      })}
+      <List
+        height={300}
+        rowHeight={25}
+        width={900}
+        overscanRowCount={5}
+        rowCount={results.length}
+        rowRenderer={rowRenderer}
+      />
     </div>
   );
 }
