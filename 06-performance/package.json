@@ -5,20 +5,25 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "fake-api": "json-server -d 750 -w -p 3333 ./server.js"
+    "fake-api": "json-server -d 750 -w -p 3333 ./server.js",
+    "analyze": "cross-env ANALYZE=true yarn build"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^10.2.0",
     "date-fns": "^2.21.3",
+    "lodash": "^4.17.21",
     "next": "latest",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-virtualized": "^9.22.3"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.168",
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "@types/react-virtualized": "^9.21.11",
+    "cross-env": "^7.0.3",
     "json-server": "^0.16.3",
     "typescript": "4.0"
   },
