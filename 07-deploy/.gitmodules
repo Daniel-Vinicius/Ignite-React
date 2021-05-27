@@ -1,0 +1,7 @@
+[submodule "cranetlifydeploy-Ignite"]
+	path = cranetlifydeploy-Ignite
+	url = https://github.com/Daniel-Vinicius/cranetlifydeploy-Ignite.git
+
+[submodule "nextverceldeploy-Ignite"]
+	path = nextverceldeploy-Ignite
+	url = https://github.com/Daniel-Vinicius/nextverceldeploy-Ignite.git
