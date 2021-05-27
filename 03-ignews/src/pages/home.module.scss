@@ -7,6 +7,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
+}
+
+.imageLandingPage {
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .hero {
@@ -23,6 +33,11 @@
     font-weight: 900;
     margin-top: 2.5rem;
 
+    @media screen and (max-width: 800px) {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+
     span {
       color: var(--cyan-500);
     }
@@ -37,7 +52,16 @@
       font-weight: bold;
     }
   }
+  button:last-child {
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+
   button {
     margin-top: 2.5rem;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
   }
 }
