@@ -1,2 +1,3 @@
-# Ignite
-Repositório do Ignite
+# Ignite React
+
+Repositório do Ignite na Trilha de React
