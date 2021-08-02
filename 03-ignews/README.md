@@ -9,21 +9,15 @@
 </h3>
 
 <p align="center">
-  <a href="#-about-the-project">Sobre o Projeto</a> •
-  <a href="#-technologies">Tecnologias</a> •
-  <a href="#-getting-started">Primeiros passos</a> •
-  <a href="#-license">License</a>
-</p>
-
-<p align="center">
   <img alt="ig.news" src=".github/ig-news.png" width="100%">
 </p>
 
 ## 👩‍💻 Sobre o Projeto
 
-[Ignews](https://ignews.vercel.app/) é um projeto criado na [Rocketseat](https://rocketseat.com.br/) no treinamento Ignite ReactJS.
+[Ignews](https://ignews.vercel.app/) é um projeto criado no curso da [Rocketseat](https://rocketseat.com.br/) no treinamento Ignite ReactJS.
 
 Neste projeto você pode se inscrever para ler posts sobre o mundo ReactJS.
+Ele está disponível para acesso em: https://ignews-dan.vercel.app/
 
 ## 🚀 Tecnologias
 
@@ -62,22 +56,12 @@ yarn dev
 
 ```
 
-## 📝 License
+# :closed_book: Licença
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Este projeto está sob a licença [MIT](./LICENSE).
 
 ---
 
 <p align="center">
 Feito com 💜&nbsp;por <a href="https://github.com/Daniel-Vinicius">Daniel Vinícius</a>
 </p>
-
-### Acessar
-
-- https://nextjs.org/docs/authentication
-
-Para autenticar com Google
-
-- https://next-auth.js.org/providers/google
-- https://developers.google.com/identity/protocols/oauth2
-- https://console.cloud.google.com/projectselector2/apis/credentials
