@@ -8,14 +8,6 @@
 
 > **dashgo** é o quarto projeto criado no chapter 4 da trilha de React do Ignite da [Rocketseat](https://github.com/Rocketseat). O projeto consiste em desenvolver uma aplicação Dashboard utilizando Chakra UI.
 
-# :pushpin: Conteúdo
-
-- [Tecnologias](#computer-tecnologias)
-- [Executando](#construction_worker-executando)
-- [Desafios](#atom_symbol-desafios)
-- [Autores](#computer-autores)
-- [Licença](#closed_book-licença)
-
 ### Fotos
 
 <div>
