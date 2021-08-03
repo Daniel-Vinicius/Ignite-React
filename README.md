@@ -50,7 +50,7 @@
 
 <p align="center">
   <a href="https://github.com/Daniel-Vinicius/Ignite-React/tree/main/04-dashgo">
-     <img src="https://github.com/tavareshenrique/ignite-reactjs/blob/main/04-dashgo/src/assets/logo.png?raw=true" alt="dashgo" width="200"/>
+     <img src="https://i.ibb.co/fksW87J/dashgo.png" alt="dashgo" width="200"/>
    </a>
 </p>
 
